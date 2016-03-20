@@ -441,14 +441,36 @@ h5 {
   text-decoration: none;
   text-transform: uppercase; }
   .btn.bg.accent {
-    background: #BE4863;
+    background: #D2E3E8;
+    color: #fff; }
+  .btn.bg.primary {
+    background: #C76B79;
     color: #fff; }
   .btn.bg.white {
     background: #fff;
-    color: #BE4863; }
+    color: #D2E3E8; }
   .btn.round {
     border-radius: 1.25em;
     padding: .5em 2em .3em; }
+
+.icon {
+  height: 3em;
+  width: 3em;
+  display: block;
+  margin: 1.75em auto .25em;
+  text-indent: -99999999px; }
+  .icon#email {
+    background: url("../images/icon_email.png") no-repeat;
+    background-size: cover;
+    background-position: center center; }
+  .icon#twitter {
+    background: url("../images/icon_twitter.png") no-repeat;
+    background-size: cover;
+    background-position: center center; }
+  .icon#facebook {
+    background: url("../images/icon_facebook.png") no-repeat;
+    background-size: cover;
+    background-position: center center; }
 
 /*-----------------------------------*\
 
@@ -671,7 +693,7 @@ a img {
   border: 0; }
 
 aside {
-  background: #1C1A50;
+  background: #C76B79;
   color: #fff;
   padding: 5em 0 4em; }
   aside .container {
@@ -684,6 +706,8 @@ aside {
 
 .align.center {
   text-align: center; }
+.align.right {
+  text-align: right; }
 
 section {
   display: table;
@@ -719,7 +743,7 @@ section {
   background-position: center center; }
 
 .emphasis {
-  background: #1C1A50;
+  background: #C76B79;
   color: #fff;
   display: inline-block;
   font-weight: 800;
@@ -727,16 +751,22 @@ section {
   margin-bottom: .3em;
   padding: .5em; }
   .emphasis.primary {
-    background: #1C1A50;
+    background: #C76B79;
     color: #fff; }
   .emphasis.accent {
-    background: #BE4863;
+    background: #D2E3E8;
     color: #fff; }
   .emphasis.centered {
     display: table; }
 
+.color.black {
+  color: #000; }
+.color.primary {
+  color: #C76B79; }
 .color.accent {
-  color: #BE4863; }
+  color: #D2E3E8; }
+.color.accent-2 {
+  color: #87EFB3; }
 
 header a#logo {
   background: url("../images/logo.png") no-repeat;
@@ -758,24 +788,25 @@ header nav {
       padding: 0;
       text-align: center; }
       header nav ul li a {
-        color: #1C1A50;
+        color: #D2E3E8;
         font-weight: 600;
         line-height: 2em;
         text-decoration: none; }
-        header nav ul li a.highlighted {
-          background: #BE4863;
-          border-radius: .4em;
-          margin-right: 0 !important;
-          color: #fff;
-          padding: 9px 14px; }
 
 #homepage .container {
   padding-top: 2em;
   width: 80%; }
+#homepage .btn {
+  display: block;
+  margin-top: 5em;
+  font-size: 1.5em;
+  padding: .75em 1.5em .7em;
+  width: 20%; }
 #homepage #home {
   background: url("../images/bg_home.png") no-repeat;
-  background-size: contain;
-  background-position: top center; }
+  background-size: cover;
+  background-position: top bottom;
+  color: #fff; }
   #homepage #home header {
     padding: 2em 3em;
     position: absolute;
@@ -784,69 +815,80 @@ header nav {
     overflow: hidden; }
     #homepage #home header #logo {
       float: left; }
-  #homepage #home .btn {
-    display: block;
-    margin-top: 2.5em;
-    width: 20%; }
-#homepage #about {
-  background: url("../images/bg_building.png") no-repeat;
-  background-size: contain;
-  background-position: center right;
-  background-size: 35%; }
-  #homepage #about p {
-    width: 50%; }
-#homepage #details {
-  background: url("../images/bg_details.png") no-repeat;
-  background-size: cover;
-  background-position: center center; }
-  #homepage #details .emphasis {
-    margin-bottom: 1.5em; }
-  #homepage #details .label, #homepage #details .answer {
-    font-weight: 600;
+  #homepage #home p {
+    font-weight: 400;
     font-size: 2em;
-    line-height: 1.75em; }
-  #homepage #details .label {
+    text-align: center; }
+#homepage #about {
+  background: url("../images/bg_about.png") no-repeat;
+  background-size: cover;
+  background-position: top center; }
+  #homepage #about p {
+    margin: 1em auto;
+    width: 40%; }
+  #homepage #about h2 {
+    font-size: 4em;
+    font-weight: 400; }
+  #homepage #about .details p {
+    font-weight: 600;
+    width: 100%;
+    margin: 0 auto; }
+#homepage #investors h4 {
+  font-weight: 600;
+  text-align: center; }
+#homepage #investors .grid {
+  border-top: 3px solid #000;
+  border-bottom: 3px solid #000;
+  margin-top: 3em; }
+  #homepage #investors .grid > .grid__col {
+    vertical-align: middle; }
+#homepage #investors p {
+  text-align: center; }
+#homepage #investors .investors {
+  background: url("../images/investors.png") no-repeat;
+  background-size: contain;
+  background-position: center center;
+  height: 20em; }
+#homepage #stories {
+  background: url("../images/bg_stories.png") no-repeat;
+  background-position: top center;
+  background-size: cover; }
+  #homepage #stories .grid {
+    margin: 3em 0; }
+    #homepage #stories .grid > .grid__col {
+      vertical-align: middle; }
+  #homepage #stories p {
+    color: #fff; }
+  #homepage #stories .logo {
+    height: 10em; }
+    #homepage #stories .logo img {
+      height: 100%; }
+  #homepage #stories h4 {
     color: #fff;
-    text-align: right;
-    padding-right: 1em; }
-  #homepage #details .answer {
-    color: #BE4863; }
-  #homepage #details .btn {
-    margin-top: 2em;
-    width: 13em; }
-#homepage #entrepreneurship {
-  background: url("../images/bg_entrepreneurship.png") no-repeat;
-  background-position: 80% center;
-  background-size: 15%; }
-  #homepage #entrepreneurship p {
+    text-align: center; }
+#homepage #funded {
+  background: url("../images/bg_funded.png") no-repeat;
+  background-position: top center;
+  background-size: cover; }
+  #homepage #funded p {
+    margin: 3em auto 0;
     width: 50%; }
-#homepage #design {
-  background: url("../images/bg_design.png") no-repeat;
-  background-position: 90% center;
-  background-size: 40%; }
-  #homepage #design p {
-    width: 50%; }
-#homepage #programming {
-  background: url("../images/bg_programming.png") no-repeat;
-  background-position: 90% center;
-  background-size: 40%; }
-  #homepage #programming p {
-    width: 50%; }
-#homepage #marketing {
-  background: url("../images/bg_marketing.png") no-repeat;
-  background-position: 90% center;
-  background-size: 40%; }
-  #homepage #marketing p {
-    width: 50%; }
+  #homepage #funded .btn {
+    margin-top: 1.5em; }
 #homepage #closing {
-  background: url("../images/bg_closing.png") no-repeat;
-  background-position: right bottom;
-  background-size: 40%; }
+  background: url("../images/bg_footer.png") no-repeat;
+  background-position: center top;
+  background-size: cover; }
   #homepage #closing p {
     width: 50%; }
   #homepage #closing .btn {
     margin-top: 2.5em;
     width: 25%; }
+  #homepage #closing p {
+    color: #fff;
+    text-align: center;
+    padding-bottom: 2em;
+    width: 100%; }
 
 @media screen and (max-width: 600px) {
   #homepage #activities li#eat h2:after {
@@ -884,7 +926,7 @@ header nav {
     padding: 0 10%; }
   #application #details .deadline:first-child {
     border-right: none;
-    border-bottom: 3px solid #1C1A50;
+    border-bottom: 3px solid #C76B79;
     padding-bottom: 1em; }
   #application #details .deadline:last-child {
     border-left: none;
@@ -946,9 +988,9 @@ header nav {
       padding: 1em 0;
       width: 100%; }
       #homepage #home section nav ul li a {
-        color: #1C1A50; }
+        color: #C76B79; }
       #homepage #home section nav ul li:not(:last-of-type) {
-        border-bottom: 1px solid #1C1A50; }
+        border-bottom: 1px solid #C76B79; }
   #homepage #home section .container {
     font-size: .9em;
     width: 85%; }
@@ -994,7 +1036,7 @@ header nav {
         padding-bottom: 4em; }
         #homepage #details section .container .deadline:after, #homepage #details section .container .deadline-detail:after {
           content: '';
-          background-color: #1C1A50;
+          background-color: #C76B79;
           width: 70%;
           height: .5em;
           position: absolute;

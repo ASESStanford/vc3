@@ -25,17 +25,10 @@ header {
         text-align: center;
 
         a {
-          color: $primary;
+          color: $accent;
           font-weight: 600;
           line-height: 2em;
           text-decoration: none; 
-          &.highlighted {
-            background: $accent;
-            border-radius: .4em;
-            margin-right: 0 !important;
-            color: $white;
-            padding: 9px 14px;
-          }
         }
       }
     }

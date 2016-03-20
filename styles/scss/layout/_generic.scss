@@ -25,6 +25,9 @@ aside {
   &.center {
     text-align: center;
   }
+  &.right {
+    text-align: right;
+  }
 }
 
 section {
@@ -95,7 +98,16 @@ section {
 }
 
 .color {
+  &.black {
+    color: $black;
+  }
+  &.primary {
+    color: $primary;
+  }
   &.accent {
     color: $accent;
+  }
+  &.accent-2 {
+    color: $accent-2;
   }
 }
