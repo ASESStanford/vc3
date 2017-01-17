@@ -17,7 +17,7 @@ Backtrace:
 /usr/bin/sass:23:in `load'
 /usr/bin/sass:23:in `<main>'
 */
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Errno::ENOENT: No such file or directory - css/scss"; }
+// body:before {
+//   white-space: pre;
+//   font-family: monospace;
+//   content: "Errno::ENOENT: No such file or directory - css/scss"; }
