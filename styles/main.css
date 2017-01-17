@@ -764,9 +764,9 @@ section {
 .color.primary {
   color: #C76B79; }
 .color.accent {
-  color: #D2E3E8; }
+  color: #028900; }
 .color.accent-2 {
-  color: #87EFB3; }
+  color: #028900; }
 
 header a#logo {
   background: url("../images/logo.png") no-repeat;
@@ -850,7 +850,7 @@ header nav {
   background-position: center center;
   height: 20em; }
 #homepage #stories {
-  background: url("../images/bg_stories.png") no-repeat;
+  background: url("../images/test.png") no-repeat;
   background-position: top center;
   background-size: cover; }
   #homepage #stories .grid {
@@ -858,13 +858,14 @@ header nav {
     #homepage #stories .grid > .grid__col {
       vertical-align: middle; }
   #homepage #stories p {
-    color: #fff; }
+    color: #C76B79; }
   #homepage #stories .logo {
-    height: 10em; }
+    height: 10em; 
+    text-align: center;}
     #homepage #stories .logo img {
       height: 100%; }
   #homepage #stories h4 {
-    color: #fff;
+    color: #C76B79;
     text-align: center; }
 #homepage #funded {
   background: url("../images/bg_funded.png") no-repeat;
