@@ -741,6 +741,14 @@ section {
   display: block;
   margin: 0 auto; }
 
+#investors h4 {
+  color: #233F71;
+}
+
+#investors h3 {
+  text-align: center;
+}
+
 .bg.asphalt {
   background-image: url("../images/bg_asphalt.png");
   background-size: cover;
@@ -867,12 +875,12 @@ header nav {
     font-size: 3em;
   }
   #homepage #stories .logo {
-    height: 10em; 
+    height: 10em;
     text-align: center;}
     #homepage #stories .logo img {
       height: 100%; }
   #homepage #stories h4 {
-    color: #FFF;
+    color: #C76B79;
     text-align: center; }
 #homepage #funded {
   background: url("../images/bg_funded.png") no-repeat;
